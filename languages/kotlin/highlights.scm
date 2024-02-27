@@ -1,4 +1,4 @@
-; CREDITS @maxbrunsfeld (maxbrunsfeld@gmail.com)
+; CREDITS @egek92 (ege.kuzubasioglu@pm.me)
 ; Variables
 (identifier) @variable
 
@@ -41,8 +41,11 @@
   "|"
   "||"
   "!"
+  "!!"
   "!="
   "=="
+  "==="
+  "!=="
   "*"
   "/"
   "%"
@@ -57,8 +60,6 @@
   "/="
   "%="
   "->"
-  "^"
-  "^="
   "&="
   "|="
   "~"
@@ -66,6 +67,15 @@
   ">>>"
   "<<"
   "::"
+  "@"
+  "$"
+  "..<"
+  ".."
+  "::"
+  "?:"
+  "?."
+  "?"
+  "_"
 ] @operator
 
 ; Types
@@ -168,60 +178,83 @@
 
 ; Keywords
 [
-  "assert"
+  "as"
+  "as?"
+  "break"
   "class"
-  "record"
-  "default"
-  "enum"
-  "extends"
-  "implements"
-  "instanceof"
+  "fun"
+  "in"
+  "!in"
   "interface"
-  "@interface"
-  "permits"
-  "to"
-  "with"
+  "is"
+  "!is"
+  "null"
+  "object"
+  "super"
+  "this"
+  "true"
+  "typealias"
+  "typeof"
+  "val"
+  "var"
+  "by"
+  "constructor"
+  "delegate"
+  "dynamic"
+  "field"
+  "file"
+  "get"
+  "init"
+  "param"
+  "property"
+  "receiver"
+  "set"
+  "setparam"
+  "value"
+  "where"
 ] @keyword
-
-(synchronized_statement
-  "synchronized" @keyword)
 
 [
   "abstract"
+  "actual"
+  "annotation"
+  "companion"
+  "const"
+  "crossinline"
+  "data"
+  "enum"
+  "expect"
+  "external"
   "final"
-  "native"
-  "non-sealed"
+  "infix"
+  "inline"
+  "inner"
+  "internal"
+  "lateinit"
+  "noinline"
   "open"
+  "operator"
+  "out"
+  "override"
   "private"
   "protected"
   "public"
+  "reified"
   "sealed"
-  "static"
-  "strictfp"
-  "transitive"
+  "suspend"
+  "tailrec"
+  "vararg"
 ] @type.qualifier
-
-(modifiers
-  "synchronized" @type.qualifier)
-
-[
-  "transient"
-  "volatile"
-] @keyword.storage
 
 [
   "return"
-  "yield"
 ] @keyword.return
-
-"new" @keyword.operator
 
 ; Conditionals
 [
   "if"
   "else"
-  "switch"
-  "case"
+  "when"
 ] @keyword.conditional
 
 (ternary_expression
@@ -241,14 +274,8 @@
 
 ; Includes
 [
-  "exports"
-  "import"
-  "module"
-  "opens"
   "package"
-  "provides"
-  "requires"
-  "uses"
+  "import"
 ] @keyword.import
 
 ; Punctuation
@@ -295,7 +322,6 @@
 ; Exceptions
 [
   "throw"
-  "throws"
   "finally"
   "try"
   "catch"

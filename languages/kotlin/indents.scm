@@ -7,7 +7,7 @@
   (constructor_body)                  ; { `modifier` X() {...} } inside `class X`
   (annotation_type_body)              ; { ... } of `@interface X`
   (block)                             ; { ... } that's not mentioned in this scope
-  (switch_block)                      ; { ... } in `switch X`
+  (when_block)                        ; { ... } in `when X`
   (array_initializer)                 ; [1, 2]
   (argument_list)                     ; foo(...)
   (formal_parameters)                 ; method foo(...)

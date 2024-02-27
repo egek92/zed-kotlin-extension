@@ -1,6 +1,6 @@
-name = "Java"
-grammar = "java"
-path_suffixes = ["java"]
+name = "Kotlin"
+grammar = "kotlin"
+path_suffixes = ["kotlin"]
 line_comments = ["// "]
 autoclose_before = ";:.,=}])>` \n\t\""
 brackets = [
