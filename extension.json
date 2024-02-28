@@ -1,9 +1,9 @@
 {
-  "name": "Java",
-  "version": "0.0.3",
+  "name": "Kotlin",
+  "version": "0.0.1",
   "authors": [
-    "Samuser107 L.Longheval <samuser107@gmail.com>"
+    "Ege Kuzubasioglu <ege.kuzubasioglu@pm.me>"
   ],
-  "description": "Provides Java syntax highlighting in Zed (and language support is comming later)",
-  "repository": "https://github.com/samuser107/zed-java-extension"
+  "description": "Provides Kotlin syntax highlighting in Zed.",
+  "repository": "https://github.com/egek92/zed-kotlin-extension"
 }
